@@ -11,8 +11,8 @@ Para obtener la mejor curva de ajuste para las funciones de las densidades margi
 
 |        | X       | Y       |
 |--------|---------|---------|
-| $\sigma$ | 3.2994  |  6.0269 |
-| $\mu$    | 9.90484 | 15.0794 |
+|![Equation](https://latex.codecogs.com/gif.latex?%5Csigma) | 3.2994  |  6.0269 |
+|![Equation](https://latex.codecogs.com/gif.latex?%5Cmu)    | 9.90484 | 15.0794 |
 
 
 ``` python
@@ -37,23 +37,24 @@ print(param_y)
 
 # Parte 2
 Partiendo de que existe indenpendencia entre X y Y, entonces se tiene que   
-  $f_{x,y}(x,y)= f_x(x)\cdot f_y(y)$
+ ![equation](https://latex.codecogs.com/gif.latex?f_%7Bx%2Cy%7D%28x%2Cy%29%3D%20f_x%28x%29%5Ccdot%20f_y%28y%29)
+ 
 
 De los resultados de la grafica, se observa que ambos representan una tendencia de una curva gaussiana, entonces: 
+![equation](https://latex.codecogs.com/gif.latex?f%28x%29%3D%20ae%5E%7B%5Cfrac%7B-%28x-%5Cmu%29%5E2%7D%7B2%20%5Csigma%5E2%7D%7D)
 
-$f(x)= ae^{\frac{-(x-\mu)^2}{2 \sigma^2}}$
+![equation](https://latex.codecogs.com/gif.latex?f%28y%29%3D%20be%5E%7B%5Cfrac%7B-%28y-%5Cmu%29%5E2%7D%7B2%20%5Csigma%5E2%7D%7D)
 
-$f(y)= be^{\frac{-(y-\mu)^2}{2 \sigma^2}}$
 
 entonces la expresion de la funcion de densidad conjunta esta dado por: 
 
-$f_{x,y}(x,y)= abe^{\frac{-(x-\mu)^2}{2 \sigma^2}}-\frac{-(y-\mu)^2}{2 \sigma^2}$
+![equation](https://latex.codecogs.com/gif.latex?f_%7Bx%2Cy%7D%28x%2Cy%29%3D%20abe%5E%7B%7B%5Cfrac%7B-%28x-%5Cmu%29%5E2%7D%7B2%20%5Csigma%5E2%7D%7D-%5Cfrac%7B-%28y-%5Cmu%29%5E2%7D%7B2%20%5Csigma%5E2%7D%7D)
+
 
 sustituyendo los valores respectivos de  $\sigma$, $\mu$ para X y Y entonces se tiene que la funcion de densidad conjunta es:
 
-$f_{x,y}(x,y)= abe^{\frac{-(x-9.9)^2}{2 *3.3^2}}-\frac{-(y-15.07)^2}{2* 6.02^2}$
 
-
+![equation](https://latex.codecogs.com/gif.latex?f_%7Bx%2Cy%7D%28x%2Cy%29%3D%20abe%5E%7B%7B%5Cfrac%7B-%28x-9.9%29%5E2%7D%7B2%20*3.3%5E2%7D%7D-%5Cfrac%7B-%28y-15.07%29%5E2%7D%7B2*%206.02%5E2%7D%7D)
 
 # Parte 3  
 
